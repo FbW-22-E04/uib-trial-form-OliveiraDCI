@@ -23,7 +23,7 @@ body {
 
 /* === */
 /* === */
-/* Backgroud */
+/* Background */
 /* === */
 /* === */
 
@@ -68,7 +68,7 @@ body {
   text-align: center;
   letter-spacing: 1px;
   color: #fff;
-  font-weight: 600;
+
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
 }
 
@@ -87,7 +87,7 @@ body {
 .input {
   display: block;
   width: 100%;
-  margin: 2em auto;
+  margin: 2em auto 0;
   padding: 1em;
 }
 
@@ -97,6 +97,7 @@ body {
   font-weight: 500;
   border: none;
   border-radius: 5px;
+  margin-bottom: 2em;
   letter-spacing: 1.5px;
   cursor: pointer;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.6);
@@ -130,4 +131,25 @@ a:visited {
 a:hover,
 a:active {
   text-decoration: underline;
+}
+
+/* Bonus */
+
+.error-msg {
+  position: relative;
+  color: tomato;
+  text-align: right;
+}
+
+.error-msg::after {
+  content: "";
+  position: absolute;
+  min-width: 50px;
+  min-height: 45px;
+  top: -46px;
+  right: 0;
+  background-image: url(./img/icon-error.svg);
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: center;
 }
