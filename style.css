@@ -20,3 +20,22 @@ html {
 body {
   font: normal 1.4rem/1.5 "Roboto Flex", sans-serif;
 }
+
+/* === */
+/* === */
+/* Backgroud */
+
+.body-bg {
+  height: 100vh;
+  width: 100vw;
+
+  background-image: linear-gradient(
+      to bottom,
+      rgba(230, 100, 100, 0.6) 10%,
+      rgba(150, 150, 225, 0.6) 100%
+    ),
+    url(./img/bg-desktop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
