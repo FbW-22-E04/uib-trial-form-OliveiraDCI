@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300;8..144,400;8..144,500;8..144,600;8..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Trial Form</title>
+  </head>
+  <body>
+    <div class="body-bg">
+      <div class="align-center flex-col">
+        <div class="top-banner">
+          <p><span class="bold">7 days FREE TRIAL</span>, then $20 / month.</p>
+        </div>
+
+        <div class="form-box">
+          <form class="form" action="#" method="post">
+            <input
+              class="input"
+              type="text"
+              name="nameFirst"
+              id="nameFirst"
+              placeholder="First Name"
+            />
+            <p class="error-msg">First name cannot be empty</p>
+            <input
+              class="input"
+              type="text"
+              name="nmeLast"
+              id="nameLast"
+              placeholder="Last Name"
+            />
+            <p class="error-msg">Last name cannot be empty</p>
+            <input
+              class="input"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email"
+            />
+            <p class="error-msg">Invalid email</p>
+            <input
+              class="input"
+              type="password"
+              name="pw"
+              id="pw"
+              placeholder="Password"
+            />
+            <p class="error-msg">Password cannot be empty</p>
+            <button class="input btn" type="claim-btn">
+              CLAIM YOUR FREE TRIAL
+            </button>
+            <p class="terms">
+              By clicking the button, you are agreeing to our
+
+              <a class="terms-link" href="#" target="_blank"
+                >Terms and Conditions</a
+              >
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

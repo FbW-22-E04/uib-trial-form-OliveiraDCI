@@ -1,0 +1,155 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font: normal 1.4rem/1.5 "Roboto Flex", sans-serif;
+}
+
+/* === */
+/* === */
+/* Background */
+/* === */
+/* === */
+
+.body-bg {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+
+  background-image: linear-gradient(
+      to bottom,
+      rgba(230, 100, 100, 0.6) 10%,
+      rgba(150, 150, 225, 0.6) 100%
+    ),
+    url(./img/bg-desktop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* FORM */
+
+.align-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-banner {
+  background-color: rgb(99, 45, 161);
+  margin-bottom: 1em;
+  padding: 1.5em;
+  width: 100%;
+  border-radius: 5px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #fff;
+
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+}
+
+.bold {
+  font-weight: 800;
+}
+.form-box {
+  width: 500px;
+  background: #fff;
+  color: #666;
+  padding: 0 2em 2em;
+  border-radius: 5px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+.input {
+  display: block;
+  width: 100%;
+  margin: 2em auto 0;
+  padding: 1em;
+}
+
+.btn {
+  background-color: rgb(133, 201, 133);
+  color: #fff;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 2em;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+.btn:hover {
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+.terms {
+  text-align: center;
+  font-weight: 300;
+  color: rgba(102, 102, 102, 0.711);
+}
+
+.terms-link {
+  font-weight: 600;
+}
+
+.input:focus,
+a:focus {
+  outline: 3px solid rgba(51, 51, 51, 0.537);
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: tomato;
+}
+
+a:hover,
+a:active {
+  text-decoration: underline;
+}
+
+/* Bonus */
+
+.error-msg {
+  position: relative;
+  color: tomato;
+  text-align: right;
+}
+
+.error-msg::after {
+  content: "";
+  position: absolute;
+  min-width: 50px;
+  min-height: 45px;
+  top: -46px;
+  right: 0;
+  background-image: url(./img/icon-error.svg);
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: center;
+}
